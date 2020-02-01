@@ -19,9 +19,13 @@ end
 
 def find_the_cheese(arr)# code an argument here
   # the array below is here to help
+  includes = []
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.map{|cheese| arr.include?(cheese)}
+  cheese_types.map{|cheese| includes << arr.include?(cheese)}
   pp includes
   if includes.include?(true)
-    return arr.index
+    return arr.at(includes.index)
+  else
+    return nil 
+  end
 end
