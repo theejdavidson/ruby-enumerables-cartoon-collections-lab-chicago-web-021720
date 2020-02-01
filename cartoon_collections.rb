@@ -24,7 +24,7 @@ def find_the_cheese(arr)# code an argument here
   cheese_types.map{|cheese| includes << arr.include?(cheese)}
   pp includes
   if(includes.include?(true))
-    pp arr.at(includes.index)
+    pp arr.at(includes.index(true))
     return arr.at(includes.index)
   else
     return nil 
