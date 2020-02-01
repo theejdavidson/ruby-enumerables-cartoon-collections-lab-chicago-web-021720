@@ -20,8 +20,11 @@ end
 def find_the_cheese(arr)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
-  cheese_types.map{|cheese| arr.include?(ch}
+  i = 0 
+  while i < cheese_types.length do 
+    if(arr.include?(cheese_types[i]))
+    i += 1
+  end
   
   if(includes.include?(true))
     pp arr.at(includes.index(true))
